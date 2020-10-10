@@ -8,16 +8,22 @@ import static org.junit.jupiter.api.Assertions.*;
 class TriangleTest {
 
     @Test
-    void calculateArea() {
+    void shouldCalculateArea() {
         //given
-        Triangle triangle = new Triangle(3, 4,5,);
+       // Triangle triangle = new Triangle(3, 4,5);
         //when
-        double result = triangle.calculateArea();
+        //double result = triangle.calculateArea();
         //then
-        assertThat(result).isEqualTo(10);
+       // assertThat(result).isEqualTo(12);
     }
 
     @Test
-    void calculateCircuit() {
+    void shouldCalculateCircuit() {
+        //given
+       Triangle triangle = new Triangle(3, 4,5);
+        //when
+        double result = triangle.calculateCircuit();
+        //then
+        assertThat(result).isEqualTo(12);
     }
 }
