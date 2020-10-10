@@ -11,13 +11,13 @@ public class Triangle extends Figure {
         this.sideB = sideB;
         this.sideC = sideC;
     }
-
+    @Override
     public double calculateArea() {
-        double halfCircuit = (sideA+sideB+sideC) / 2
-        double area = Math.sqrt(halfCircuit(halfCircuit-sideA)(halfCircuit-sideB)(halfCircuit-sideC));
+        double halfCircuit = (sideA+sideB+sideC) / 2; // wzór Herona na pole trójkąta
+        double area = Math.sqrt(halfCircuit*(halfCircuit-sideA)*(halfCircuit-sideB)*(halfCircuit-sideC));
         return area;
     }
-
+    @Override
     public double calculateCircuit() {
         return sideA + sideB + sideC;
     }
