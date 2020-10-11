@@ -12,5 +12,11 @@ public class Main {
 
         Scooter scooter = new Scooter("Xiaomi ");
         rentService.rent(scooter,3);
+
+        Trailer trailer = new Trailer(50);
+        rentService.rent(trailer,3);
+
+
+
     }
 }

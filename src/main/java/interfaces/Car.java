@@ -2,7 +2,7 @@ package interfaces;
 
 import java.math.BigDecimal;
 
-public class Car {
+public class Car implements Rentable {
 
     private static final BigDecimal PRICE_PER_HOUR = BigDecimal.valueOf(20);
 
@@ -15,12 +15,12 @@ public class Car {
         this.model = model;
         this.year = year;
     }
-
-    public String description() {
+    @Override
+    public String getDescription() {
         return " Samochód marki " + this.brand + " model " + this.model + " rok produkcji " + this.year;
 
     }
-
+    @Override
     public BigDecimal calculatePrice(int hours) {
         BigDecimal bigDecimalHours = BigDecimal.valueOf(hours);
         return PRICE_PER_HOUR.multiply(bigDecimalHours);

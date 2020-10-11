@@ -12,17 +12,23 @@ public class RentService {
         this.invoiceService = invoiceService;
     }
 
-    public void rent(Car car, int hours) {
-        smsService.sentRentConfirmation(car);
-        emailService.sentRentConfirmation(car);
-        invoiceService.generateInvoice(car,hours);
-
-    }
-
-    public void rent(Scooter scooter, int hours) {
-        smsService.sentRentConfirmation(scooter);
-        emailService.sentRentConfirmation(scooter);
-        invoiceService.generateInvoice(scooter,hours);
+//    public void rent(Car car, int hours) {
+//        smsService.sendRentConfirmation(car);
+//        emailService.sendRentConfirmation(car);
+//        invoiceService.generateInvoice(car,hours);
+//
+//    }
+//
+//    public void rent(Scooter scooter, int hours) {
+//        smsService.sendRentConfirmation(scooter);
+//        emailService.sendRentConfirmation(scooter);
+//        invoiceService.generateInvoice(scooter,hours);
+//
+//    }
+    public void rent(Rentable rentable, int hours) {
+        smsService.sendRentConfirmation(rentable);
+        emailService.sendRentConfirmation(rentable);
+        invoiceService.generateInvoice(rentable, hours);
 
     }
 }
