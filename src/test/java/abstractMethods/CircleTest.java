@@ -1,8 +1,10 @@
 package abstractMethods;
 
+import org.assertj.core.data.Percentage;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.offset;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
@@ -15,6 +17,8 @@ class CircleTest {
         double result = circle.calculateArea();
         //then
         assertThat(result).isEqualTo(78.53981633974483);
+        assertThat(result).isCloseTo(78.53, offset(0.01));// ten zapis pozwala na granicę błędu offset
+
     }
 
     @Test
