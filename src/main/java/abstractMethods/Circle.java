@@ -19,4 +19,9 @@ public class Circle extends Figure {
         double circuit = 2 * Math.PI*radius;
         return circuit;
     }
+
+    @Override
+    public String figureName() {
+        return "This is circle";
+    }
 }

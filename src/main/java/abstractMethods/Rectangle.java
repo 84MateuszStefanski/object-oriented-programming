@@ -19,4 +19,9 @@ public class Rectangle extends Figure {
     public double calculateCircuit() {
         return (sideA * 2) + (sideB * 2);
     }
+
+    @Override
+    public String figureName() {
+        return "This is rectangle";
+    }
 }

@@ -20,4 +20,9 @@ public class Diamond extends Figure {
         return sideA*4 ;
     }
 
+    @Override
+    public String figureName() {
+        return "This is diamond";
+    }
+
 }

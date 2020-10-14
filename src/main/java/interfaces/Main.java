@@ -1,5 +1,6 @@
 package interfaces;
 
+
 public class Main {
     public static void main(String[] args) {
         SmsService sms = new SmsService();
@@ -15,8 +16,6 @@ public class Main {
 
         Trailer trailer = new Trailer(50);
         rentService.rent(trailer,3);
-
-
 
     }
 }

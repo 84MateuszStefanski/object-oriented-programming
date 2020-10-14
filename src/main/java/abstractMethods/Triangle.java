@@ -21,4 +21,9 @@ public class Triangle extends Figure {
     public double calculateCircuit() {
         return sideA + sideB + sideC;
     }
+
+    @Override
+    public String figureName() {
+        return "This is Triangle";
+    }
 }

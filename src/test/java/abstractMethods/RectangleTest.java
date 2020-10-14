@@ -25,5 +25,15 @@ class RectangleTest {
         assertThat(result).isEqualTo(14);
     }
 
+    @Test
+    void shouldReturnFigureName() {
+        //given
+        Rectangle rectangle = new Rectangle(5, 2);
+        //when
+        String result = rectangle.figureName();
+        //then
+        assertThat(result).isEqualTo("This is rectangle");
+    }
+
 
 }
