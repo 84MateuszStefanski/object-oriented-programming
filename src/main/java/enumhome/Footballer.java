@@ -37,10 +37,10 @@ public class Footballer extends Employee{
     @Override
     public String toString() {
         return super.toString() +
-                " height=" + height +
-                ", weight=" + weight +
-                ", position='" + position + '\'' +
-                ", betterLeg='" + betterLeg + '\'' +
+                " he`s height is " + height +
+                ", he`s weight is " + weight +
+                ", he`s favourite position is " + position + '\'' +
+                ", he`s better leg is " + betterLeg + '\'' +
                 '}';
     }
 }
