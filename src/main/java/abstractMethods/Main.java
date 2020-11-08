@@ -10,6 +10,9 @@ public class Main {
         System.out.println(rectangle.figureName());
         System.out.println(rectangle.calculateArea());
         System.out.println(rectangle.calculateCircuit());
+
+        Hexagon hexagon = new Hexagon(3);
+        System.out.println(hexagon.calculateArea());
     }
 
 }
